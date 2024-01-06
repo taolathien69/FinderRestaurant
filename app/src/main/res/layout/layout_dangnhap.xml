@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backdndk"
+    android:orientation="vertical"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingTop="50dp"
+        android:text="Đăng Nhập"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="70dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="Nhập Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="Nhập Password"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Quên mật khẩu?"
+
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonDN"
+        android:layout_gravity="center"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/xanhduong"
+        android:onClick="nhanDangNhap"
+        android:text="Đăng nhập" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:text="Chưa có tài khoản" />
+
+        <TextView
+            android:id="@+id/textViewDangKy"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkred"
+            android:textStyle="italic|bold"
+            android:text="Đăng ký?"
+            android:clickable="true"
+            android:onClick="openRegisterActivity"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="70dp">
+
+        <Button
+            android:id="@+id/buttonGG"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="50dp"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:drawableLeft="@drawable/icgg"
+            android:backgroundTint="@color/xam"
+            android:text="Google" />
+
+        <Button
+            android:id="@+id/buttonFB"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/fb"
+            android:backgroundTint="@color/xam"
+            android:textSize="10dp"
+            android:text="Facebook" />
+    </LinearLayout>
+
+
+</LinearLayout>
